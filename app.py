@@ -1,6 +1,4 @@
-# Gerar o app.py COMPLETO com todas as funcionalidades novamente
-
-app_code_full = '''# Streamlit App: Cálculo de IBUTG com Dendogramas e Boxplots
+# Streamlit App: Cálculo de IBUTG com Dendogramas e Boxplots
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -157,17 +155,3 @@ if uploaded_modelo and uploaded_csvs:
 
         st.subheader("📈 Boxplots por Mês")
         st.pyplot(criar_boxplot_por_grupo(df_plot, "Nome_Mês", limites_est))
-'''
-
-# Salvar o app.py completo
-with open("/mnt/data/streamlit_ibutg_app/app.py", "w", encoding="utf-8") as f:
-    f.write(app_code_full)
-
-# Atualizar o .zip
-zip_path_final = "/mnt/data/streamlit_ibutg_app_completo.zip"
-with zipfile.ZipFile(zip_path_final, "w", zipfile.ZIP_DEFLATED) as zipf:
-    zipf.write("/mnt/data/streamlit_ibutg_app/app.py", arcname="app.py")
-    zipf.write("/mnt/data/streamlit_ibutg_app/requirements.txt", arcname="requirements.txt")
-    zipf.write("/mnt/data/streamlit_ibutg_app/README.md", arcname="README.md")
-
-zip_path_final
