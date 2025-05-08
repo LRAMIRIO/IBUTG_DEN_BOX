@@ -5,6 +5,8 @@ Este aplicativo realiza:
 - Conversão automática UTC -> horário local
 - Boxplots por estação e mês com limites configuráveis
 - Dendogramas com base em estatísticas de IBUTG
+- Exportação dos gráficos em PNG (300dpi)
+- Exportação da planilha modelo preenchida
 
 ## Uso no Streamlit Community Cloud
 1. Crie um repositório no GitHub
