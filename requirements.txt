@@ -1,8 +1,2 @@
 streamlit
-pandas
 matplotlib
-seaborn
-openpyxl
-pytz
-timezonefinder
-scikit-learn

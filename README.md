@@ -1,11 +1,11 @@
-# Aplicativo Streamlit para Análise de IBUTG
+# Aplicativo Streamlit de Análise de IBUTG
 
-Este app realiza:
-- Cálculo do IBUTG com vento corrigido
-- Boxplots por estação/mês e dendogramas
-- Exportação dos resultados (PNG e Excel)
+Este aplicativo inclui:
+- Verificação de gráficos nulos (`fig is None`) para evitar erros em produção
+- Exemplo de estrutura de exportação de gráficos
 
 ## Rodar localmente
+
 ```bash
 pip install -r requirements.txt
 streamlit run app.py
